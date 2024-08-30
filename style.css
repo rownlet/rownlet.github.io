@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Inter', Arial, sans-serif;
-    background-color: #f5f7fa;
+    background-color: #f4f4f9;
     color: #1a3e59;
     margin: 0;
     padding: 0;
@@ -11,6 +11,7 @@ body {
 h1, h2, h3 {
     font-weight: 700;
     color: #1a3e59;
+    margin-bottom: 20px;
 }
 
 p, a {
@@ -20,11 +21,10 @@ p, a {
 
 a {
     text-decoration: none;
-    color: #007bff;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #007bff;
 }
 
 /* Header Styles */
@@ -34,19 +34,19 @@ a:hover {
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
 }
 
-.header .navbar-brand span {
+.header .navbar-brand {
     font-size: 1.5em;
     font-weight: 700;
-    margin-right: 5px;
 }
 
 .header .navbar-nav .nav-link {
     color: #ffffff;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .header .navbar-nav .nav-link:hover {
@@ -56,20 +56,19 @@ a:hover {
 /* Showcase Section */
 .rad-showcase {
     background-color: #e9ecef;
-    padding: 100px 0;
+    padding: 100px 20px;
     text-align: left;
-    position: relative;
-    z-index: 1;
+    margin-top: 80px;
 }
 
 .rad-showcase h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #1a3e59;
     margin-bottom: 20px;
 }
 
 .rad-showcase p {
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
@@ -78,7 +77,7 @@ a:hover {
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .rad-showcase .btn-primary:hover {
@@ -101,112 +100,46 @@ a:hover {
     color: #007bff;
 }
 
-/* About Section */
-#about {
-    padding: 60px 0;
+/* Section Styles */
+.section {
+    padding: 60px 20px;
 }
 
-#about h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.2em;
-}
-
-#about img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Portfolio Section */
-#portfolio {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
-
-#portfolio h2 {
+.section h2 {
+    font-size: 1.8em;
     text-align: center;
     margin-bottom: 40px;
 }
 
-#portfolio .row {
-    display: flex;
-    align-items: center;
+.section p {
+    font-size: 1.1em;
+    text-align: center;
 }
 
-#portfolio .row img {
+.section img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-#portfolio .btn-primary {
+.section .btn-primary {
     background-color: #007bff;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1em;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
 }
 
-#portfolio .btn-primary:hover {
+.section .btn-primary:hover {
     background-color: #0056b3;
-}
-
-/* Experience Section */
-#experience {
-    padding: 60px 0;
-}
-
-#experience h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#experience p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-#experience .btn-primary {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.1em;
-}
-
-#experience .btn-primary:hover {
-    background-color: #0056b3;
-}
-
-#experience .btn-frameless {
-    background: none;
-    border: 2px solid #1a3e59;
-    color: #1a3e59;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.1em;
-}
-
-#experience .btn-frameless:hover {
-    background-color: #1a3e59;
-    color: #ffffff;
 }
 
 /* Contact Section */
-#contact {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
-
-#contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
 #contact .contact__info h4 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
@@ -215,11 +148,10 @@ a:hover {
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1.1em;
-}
-
-#contact .btn-primary:hover {
-    background-color: #0056b3;
+    font-size: 1em;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 /* Footer */
@@ -232,7 +164,7 @@ a:hover {
 
 .footer .navbar-nav .nav-link {
     color: #ffffff;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .footer .navbar-nav .nav-link:hover {
