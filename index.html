@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Data Scientist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #about, #skills, #projects, #contact {
+            padding: 20px 0;
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        .skill-bar {
+            background-color: #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .skill-bar div {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: right;
+            width: 0;
+        }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #contact input, #contact textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #contact button {
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #contact button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portafolio Profesional de Data Scientist</h1>
+    </header>
 
+    <nav>
+        <a href="#about">Acerca de Mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>Acerca de Mí</h2>
+            <p>Soy un Data Scientist con experiencia en análisis de datos, machine learning y visualización de datos. Mi objetivo es utilizar la ciencia de datos para resolver problemas complejos y facilitar la toma de decisiones basadas en datos.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skill-bar">
+                <div style="width: 90%;">Python - 90%</div>
+            </div>
+            <div class="skill-bar">
+                <div style="width: 85%;">Machine Learning - 85%</div>
+            </div>
+            <div class="skill-bar">
+                <div style="width: 80%;">SQL - 80%</div>
+            </div>
+            <div class="skill-bar">
+                <div style="width: 75%;">Visualización de Datos (Tableau) - 75%</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><strong>Predicción de Ventas:</strong> Modelo predictivo para estimar ventas futuras basado en datos históricos.</li>
+                <li><strong>Análisis de Sentimientos:</strong> Análisis de sentimientos en redes sociales para evaluar la percepción de una marca.</li>
+                <li><strong>Optimización de Procesos:</strong> Implementación de técnicas de machine learning para optimizar procesos de manufactura.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Nombre Completo" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
