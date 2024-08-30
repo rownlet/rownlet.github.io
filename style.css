@@ -1,6 +1,6 @@
-/* Estilos básicos */
+/* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     background-color: #f5f7fa;
     color: #1a3e59;
     margin: 0;
@@ -8,138 +8,233 @@ body {
     line-height: 1.6;
 }
 
-/* Encabezado */
-header {
+h1, h2, h3 {
+    font-weight: 700;
+    color: #1a3e59;
+}
+
+p, a {
+    font-size: 1em;
+    color: #1a3e59;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1a3e59;
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .navbar-brand span {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.header .navbar-nav .nav-link {
+    color: #ffffff;
+    margin: 0 15px;
+}
+
+.header .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Showcase Section */
+.rad-showcase {
+    background-color: #e9ecef;
+    padding: 100px 0;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.rad-showcase h1 {
+    font-size: 2.5em;
+    color: #1a3e59;
+    margin-bottom: 20px;
+}
+
+.rad-showcase p {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.rad-showcase .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.rad-showcase .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Platform Links */
+.platform-links {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.platform-links a {
+    margin-right: 15px;
+    font-size: 2em;
+    color: #1a3e59;
+}
+
+.platform-links a:hover {
+    color: #007bff;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#portfolio .row {
+    display: flex;
+    align-items: center;
+}
+
+#portfolio .row img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#portfolio .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#portfolio .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Experience Section */
+#experience {
+    padding: 60px 0;
+}
+
+#experience h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#experience p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#experience .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#experience .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#experience .btn-frameless {
+    background: none;
+    border: 2px solid #1a3e59;
+    color: #1a3e59;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#experience .btn-frameless:hover {
+    background-color: #1a3e59;
+    color: #ffffff;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact .contact__info h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
     background-color: #1a3e59;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    font-weight: 700;
-}
-
-/* Navegación */
-nav {
-    margin: 20px 0;
-    text-align: center;
-}
-
-nav a {
-    margin: 0 20px;
-    color: #1a3e59;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-nav a:hover {
-    color: #007bff;
-}
-
-/* Contenedor principal */
-.container {
-    width: 85%;
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
-
-/* Secciones */
-section {
-    margin: 30px 0;
-}
-
-h2 {
-    font-size: 2em;
-    color: #007bff;
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-/* Barras de habilidad */
-.skill-bar {
-    background-color: #e6ecf0;
-    border-radius: 25px;
-    margin: 10px 0;
-    overflow: hidden;
-}
-
-.skill-bar div {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border-radius: 25px;
-    text-align: right;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-/* Formulario de contacto */
-#contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-#contact input, #contact textarea {
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1em;
-}
-
-#contact button {
-    padding: 15px;
-    border: none;
-    background-color: #007bff;
+.footer .navbar-nav .nav-link {
     color: #ffffff;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-#contact button:hover {
-    background-color: #0056b3;
-}
-
-/* Enlaces sociales */
-.social-links {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.social-links a {
     margin: 0 15px;
-    color: #1a3e59;
-    text-decoration: none;
-    font-size: 2em;
-    transition: color 0.3s ease;
 }
 
-.social-links a:hover {
+.footer .navbar-nav .nav-link:hover {
     color: #007bff;
-}
-
-/* Pie de página */
-footer {
-    background-color: #1a3e59;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-    font-size: 0.9em;
 }
