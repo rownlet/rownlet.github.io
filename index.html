@@ -1,249 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" class="fonts-loaded">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rindolfo Barra Roa's Data Science Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Portafolio de Data Scientist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-
-    <header class="header fixed-top rad-animation-group header--sticky header--sticky-triggered" id="header">
-        <div class="container rad-fade-in rad-waiting rad-animate" style="animation-delay: 0.1s;">
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
-                <a class="navbar-brand" href="#">
-                    <span>Rindolfo</span>
-                    <span>Barra Roa</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #header" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll="" class="nav-link" href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll="" class="nav-link" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll="" class="nav-link" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    <header>
+        <h1>Portafolio Profesional de Data Scientist</h1>
     </header>
 
-    <section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
-        <div class="rad-showcase__bg">
-            <img class="lozad img-responsive" src="data-science.gif" alt="Data Science Background">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
-                    <h1 class="display-1">
-                        Hello, I’m Rindolfo Barra Roa.
-                        <br>
-                        <span>Data Scientist, Engineer & Mentor</span>
-                    </h1>
-                    <p class="lead">
-                        I specialize in optimizing processes and creating data-driven solutions to drive business success.
-                    </p>
-                    <a href="mailto:rincybarra@gmail.com" class="btn btn-primary">
-                        <i class="icon-mail-fill"></i>
-                        Contact Me
-                    </a>
-                </div>
-            </div>
-            <div class="row platform-links">
-                <div class="col-12">
-                    <a href="https://www.linkedin.com/in/rindolfobarrar/" target="_blank"><i class="icon-linkedin-line"></i></a>
-                    <a href="https://github.com/rownlet" target="_blank"><i class="icon-github-line"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <nav>
+        <a href="#about">Acerca de Mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
 
-    <section class="section rad-animation-group pb-20 pt-20 section--border-bottom" id="about">
-        <div class="container rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
-            <div class="row d-flex flex-column-reverse flex-md-row">
-                <div class="about__profile-picture col-12 col-md-6">
-                    <img class="lozad img-responsive image-left-overflow" src="profile-picture.jpg" alt="Profile Picture">
-                </div>
-                <div class="col-12 col-md-6 my-auto">
-                    <h2>Who am I?</h2>
-                    <p class="lead">
-                        I am passionate about applying data science to solve complex problems and drive value through data-driven decision-making.
-                    </p>
-                    <a href="https://www.linkedin.com/in/rindolfobarrar/" target="_blank" class="btn btn-primary">
-                        <i class="icon-smile-fill"></i>
-                        About Me
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <section id="about">
+            <h2>Acerca de Mí</h2>
+            <p>Soy un Data Scientist con experiencia en análisis de datos, machine learning y visualización de datos. Mi objetivo es utilizar la ciencia de datos para resolver problemas complejos y facilitar la toma de decisiones basadas en datos.</p>
+        </section>
 
-    <section id="portfolio" class="section section--border-bottom">
-        <div class="container">
-            <h2 class="rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
-                Portfolio
-            </h2>
-            <div class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row rad-waiting rad-animate" style="animation-delay: 0.1s;">
-                <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-                    <h3>Sales Demand Forecast Application</h3>
-                    <p class="lead">
-                        This application helps Marketing & Sales identify trends in product demand using machine learning.
-                    </p>
-                    <a href="#" class="btn btn-primary" target="_blank">Launch Application<i class="icon-arrow-right"></i></a>
-                </div>
-                <div class="col-12 col-md-7 pl-md-0 text-right">
-                    <img class="lozad img-responsive img-clip-left-backward" src="project1.jpg" alt="Sales Demand Forecast Application">
-                </div>
-            </div>
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skill-bar"><div style="width: 90%;">Python - 90%</div></div>
+            <div class="skill-bar"><div style="width: 85%;">Machine Learning - 85%</div></div>
+            <div class="skill-bar"><div style="width: 80%;">SQL - 80%</div></div>
+            <div class="skill-bar"><div style="width: 75%;">Visualización de Datos (Tableau) - 75%</div></div>
+        </section>
 
-            <div class="row row--padded rad-animation-group rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
-                <div class="col-12 col-md-7 pl-md-0 text-right">
-                    <img class="lozad img-responsive img-clip-right-backward" src="project2.jpg" alt="Product Price Recommendation">
-                </div>
-                <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
-                    <h3>Product Price Recommendation</h3>
-                    <p class="lead">
-                        This application helps R&D teams determine product gaps and price new products using machine learning.
-                    </p>
-                    <a href="#" class="btn btn-primary" target="_blank">Launch Application<i class="icon-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><strong>Predicción de Ventas:</strong> Modelo predictivo para estimar ventas futuras basado en datos históricos.</li>
+                <li><strong>Análisis de Sentimientos:</strong> Análisis de sentimientos en redes sociales para evaluar la percepción de una marca.</li>
+                <li><strong>Optimización de Procesos:</strong> Implementación de técnicas de machine learning para optimizar procesos de manufactura.</li>
+            </ul>
+        </section>
 
-    <section id="experience" class="section section--border-bottom rad-animation-group">
-        <div class="container">
-            <div class="row flex-column-reverse flex-md-row rad-fade-down rad-waiting rad-animate" style="animation-delay: 0.1s;">
-                <div class="col-12 col-sm-6 mt-5 mt-sm-0">
-                    <div class="experience">
-                        <div class="experience__date">2020 - Present</div>
-                        <div class="experience__title">Data Scientist</div>
-                        <div class="experience__company">Sure Tomorrow Insurance</div>
-                    </div>
-                    <div class="experience">
-                        <div class="experience__date">2018 - 2020</div>
-                        <div class="experience__title">Project Manager</div>
-                        <div class="experience__company">Big Data Corp.</div>
-                    </div>
-                    <!-- Agrega más experiencias según sea necesario -->
-                </div>
-                <div class="col-12 col-sm-6">
-                    <h2>Experience</h2>
-                    <p class="lead">
-                        Over 10 years of experience working with companies to design and implement data-driven solutions that optimize operations and enhance decision-making.
-                    </p>
-                    <a href="https://www.linkedin.com/in/rindolfobarrar/" class="btn btn-primary" target="_blank">
-                        <i class="icon-linkedin-fill"></i>
-                        Linkedin
-                        <i class="icon-arrow-right"></i></a>
-                    <a href="resume.pdf" class="btn btn-frameless" target="_blank">
-                        <i class="icon-profile-fill"></i>
-                        Download My Resume
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="social-links">
+            <h2>Sígueme</h2>
+            <a href="https://www.linkedin.com/in/rindolfobarrar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/rownlet" target="_blank"><i class="fab fa-github"></i></a>
+        </section>
 
-    <section id="contact" class="section section--contact pt-0">
-        <div class="container">
-            <div class="contact">
-                <h2>Contact Rindolfo</h2>
-                <div class="row pt-2">
-                    <div class="col-12 col-lg-5 contact__info">
-                        <h4>Email</h4>
-                        <span><a href="mailto:rincybarra@gmail.com">rincybarra@gmail.com</a></span>
-                        <br><br>
-                        <a class="btn btn-primary" href="mailto:rincybarra@gmail.com">
-                            <i class="icon-mail-fill"></i>
-                            Send Message
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Nombre Completo" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__left">
-                <div class="footer__copy">
-                    © Rindolfo Barra Roa. All rights reserved.
-                </div>
-            </div>
-            <div class="footer__links">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2024 Rindolfo Barra. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="rad-animations.js"></script>
-    <script src="lozad.min.js"></script>
-    <script>
-        window.addEventListener("load", function() {
-            var observer = window.lozad(".lozad", {
-                rootMargin: window.innerHeight / 2 + "px 0px",
-                threshold: 0.01
-            }); 
-            observer.observe();
-        });
-    </script>
-    <script src="jquery-3.3.1.slim.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="sticky-header.js"></script>
-    <script src="smooth-scroll.polyfills.min.js"></script>
-    <script src="fontfaceobserver.js"></script>
-    <script>
-        (function(w) {
-            if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
-                return;
-            }
-            var fontA = new w.FontFaceObserver("Inter", { weight: 300 });
-            var fontB = new w.FontFaceObserver("Inter", { weight: 400 });
-            var fontC = new w.FontFaceObserver("Inter", { weight: 500 });
-            var fontD = new w.FontFaceObserver("Inter", { weight: 600 });
-            var fontE = new w.FontFaceObserver("Inter", { weight: 700 });
-            var fontF = new w.FontFaceObserver("Inter", { weight: 900 });
-            w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
-                w.document.documentElement.className += " fonts-loaded";
-            });
-        })(this);
-    </script>
-    <script>
-        const scroll = new SmoothScroll('a[href*="#"]');
-        $('a.nav-link').on('click', () => {
-            const navbar = $('.navbar-collapse');
-            if (navbar && navbar.hasClass('show')) {
-                $('.navbar-toggler').click();
-            }
-        })
-    </script>
-
 </body>
 </html>
